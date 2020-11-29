@@ -94,32 +94,33 @@ exports.CheckFetch = async function(name, cmd, ops = {}) {
     ...ops
   }
   const cmdParams = parseCmdParams(cmd)
-
   // 监测文件夹是否存在
   // 如果init附加了--force或-f参数，则直接执行覆盖操作
-  if (cmdParams.force) {
+  if (cmdParams.force === 'force') {
     // 移除需要覆盖的文件
     await fs.removeSync(RepoMaps.projpath)
-  }
-  // 否则进行文件夹检查,  fs.pathExistsSync 判断当前文件夹名称是否已经存在
-  const isTarget = await fs.pathExistsSync(RepoMaps.projpath)
-  if (isTarget) {
-    const { recover } = await inquirer.prompt(InquirerOpts.folderExist);
-    if (recover === 'cover') {
-      await fs.removeSync(RepoMaps.projpath);
-    } else if (recover === 'newFolder') {
-      const { inputNewName } = await isExistReName()
-      // const { inputNewName } = await inquirer.prompt(InquirerOpts.rename);
-      // let isExists = fs.existsSync(inputNewName);
-      // if (isExists) {
-      //   statusLog.error(`The ${inputNewName} project already exists in  directory, Please try to use another projectName!`);
-      //   exit(1);
-      // }
-      RepoMaps.projdir = inputNewName;
-      RepoMaps.projpath = targetRelPath(`./${inputNewName}`);
-    } else {
-      exit(1);
+  } else {
+    // 否则进行文件夹检查,  fs.pathExistsSync 判断当前文件夹名称是否已经存在
+    const isTarget = await fs.pathExistsSync(RepoMaps.projpath)
+    if (isTarget) {
+      const { recover } = await inquirer.prompt(InquirerOpts.folderExist);
+      if (recover === 'cover') {
+        await fs.removeSync(RepoMaps.projpath);
+      } else if (recover === 'newFolder') {
+        const { inputNewName } = await isExistReName()
+        // const { inputNewName } = await inquirer.prompt(InquirerOpts.rename);
+        // let isExists = fs.existsSync(inputNewName);
+        // if (isExists) {
+        //   statusLog.error(`The ${inputNewName} project already exists in  directory, Please try to use another projectName!`);
+        //   exit(1);
+        // }
+        RepoMaps.projdir = inputNewName;
+        RepoMaps.projpath = targetRelPath(`./${inputNewName}`);
+      } else {
+        exit(1);
+      }
     }
   }
+  
   selectedTempl(RepoMaps, cmdParams);
 }
