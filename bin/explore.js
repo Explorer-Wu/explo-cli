@@ -12,9 +12,9 @@ commander
   .version(version, '-v, --version', 'display version for exploring-cli')
   .usage('<command> [options]')
 
-// 定义exploring 参数
-commander 
-  .option('-f, --force', 'force all the question')
+// // 定义exploring 参数
+// commander 
+//   .option('-f, --force', 'force all the question')
 
 /**
  * 调用command方法，创建一个init命令,

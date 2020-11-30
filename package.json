@@ -1,6 +1,6 @@
 {
   "name": "exploring-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "preferGlobal": true,
   "description": "A simple CLI tool for front-end engineering automation construction.",
   "repository": {

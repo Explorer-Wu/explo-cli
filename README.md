@@ -25,12 +25,12 @@
 
 ## 前端自动化构建目标期望
 快速生成新项目的目录模板，目录结构是每个项目统一个模版规范（目录规范），设定通用的配置如下：
-    1. 通用的Webpack配置
-    2. 统一的Eslint 校验规则eslintConfig）
-    3. 统一的单元测试框架配置：单元测试覆盖率、测试的目录等
-    4. 统一的Dockerfile和jenkinsfile (用来打包成镜像和部署流水线定义)
-    5. 统一babel的配置（.babelrc或babel.config.js）
-    6. 统一的常量配置（缓存字段等等）不同环境的配置文件（development、test、production）
+    1. 通用的Webpack配置  
+    2. 统一的Eslint 校验规则eslintConfig）   
+    3. 统一的单元测试框架配置：单元测试覆盖率、测试的目录等   
+    4. 统一的Dockerfile和jenkinsfile (用来打包成镜像和部署流水线定义)   
+    5. 统一babel的配置（.babelrc或babel.config.js）   
+    6. 统一的常量配置（缓存字段等等）不同环境的配置文件（development、test、production）   
 
 脚手架起到一个至关重要的角色，通过脚手架来约束好规范，统一的配置，来打通新项目的开发工具链，一方面提升开发效率，一方面则提高项目对接可维护性及新员工熟悉项目简易性。
 
