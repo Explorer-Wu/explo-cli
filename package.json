@@ -1,19 +1,19 @@
 {
-  "name": "exploring-cli",
-  "version": "1.0.1",
+  "name": "explo-cli",
+  "version": "1.0.0",
   "preferGlobal": true,
   "description": "A simple CLI tool for front-end engineering automation construction.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Explorer-Wu/exploring-cli.git"
+    "url": "git+https://github.com/Explorer-Wu/explo-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/Explorer-Wu/exploring-cli/issues"
+    "url": "https://github.com/Explorer-Wu/explo-cli/issues"
   },
-  "homepage": "https://github.com/Explorer-Wu/exploring-cli#readme",
+  "homepage": "https://github.com/Explorer-Wu/explo-cli#readme",
   "main": "./bin/explore.js",
   "bin": {
-    "exploring": "./bin/explore.js"
+    "explo": "./bin/explore.js"
   },
   "dependencies": {
     "async": "^3.2.0",
@@ -31,7 +31,7 @@
     "README.md"
   ],
   "keywords": [
-    "exploring",
+    "explo",
     "cli",
     "spa"
   ],

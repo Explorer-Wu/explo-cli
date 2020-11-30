@@ -1,26 +1,26 @@
-# exploring-cli
+# explo-cli
 
 前端工程自动化构建工具
 该构建模版可选择react.js或vue.js的PC端模版, react.js相关的移动端模版
 
 * 安装 
 ```
-    npm install exploring-cli -g
+    npm install explo-cli -g
 ```    
 
 * 用法
 * 初始化项目模版
 ```
-    exploring init <projectName>
+    explo init <projectName>
 ```
 或者
 ```
-    exploring i <projectName>
+    explo i <projectName>
 ```
 
 * 版本号查看
 ```
-    exploring -v
+    explo -v
 ```    
 
 ## 前端自动化构建目标期望
@@ -34,7 +34,7 @@
 
 脚手架起到一个至关重要的角色，通过脚手架来约束好规范，统一的配置，来打通新项目的开发工具链，一方面提升开发效率，一方面则提高项目对接可维护性及新员工熟悉项目简易性。
 
-开发一个高度可定制化的脚手架，需要考虑的因素很多。 exploring-cli通常准备3个模版：  
+开发一个高度可定制化的脚手架，需要考虑的因素很多。 explo-cli通常准备3个模版：  
     1.pc端react模版;   2. mobile端的react模版;   3.pc端vue模版 
 然后用git管理起来，我需要如下工具：  \
     1) 用于控制台选择的工具：inquirer  \
@@ -45,7 +45,7 @@
 **前端自动化脚手架说明**    
 explore.js文件的第一行，一定是第一行，添加了
 `#!/usr/bin/env node`
-代码，指定了我们脚本的运行环境，相当于运行exploring命令的时候添加了node命令作为前缀，即实际运行的是node exploring
+代码，指定了我们脚本的运行环境，相当于运行explo命令的时候添加了node命令作为前缀，即实际运行的是node explo
 
 ## 前端自动化构建流程  
     1. 命令入口 package.json  

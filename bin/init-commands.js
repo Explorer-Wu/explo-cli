@@ -84,7 +84,7 @@ class InitCommand {
     useLessKey.forEach(key => delete jsonData[key]);
     Object.assign(jsonData, {
       name: this.RepoMaps.projdir,
-      author: name ? `${name}` : 'exploring',
+      author: name ? `${name}` : 'explo',
       provide: true,
       version: "1.0.0"
     });

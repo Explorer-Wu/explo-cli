@@ -9,22 +9,22 @@ const commander = new Command();
 
 // 定义版本命令和help命令的说明信息
 commander
-  .version(version, '-v, --version', 'display version for exploring-cli')
+  .version(version, '-v, --version', 'display version for explo-cli')
   .usage('<command> [options]')
 
-// // 定义exploring 参数
+// // 定义explo 参数
 // commander 
 //   .option('-f, --force', 'force all the question')
 
 /**
  * 调用command方法，创建一个init命令,
  * 同时init命令后面必须跟一个命令参数
- * 假如你在终端运行exploring init不加项目名称，则会报错提示用户
+ * 假如你在终端运行explo init不加项目名称，则会报错提示用户
  */
 commander.command('init <projectName>')
   .alias("i")
   // 定义该命令的描述
-  .description('请输入项目名称，初始化一个exploring项目模版')
+  .description('请输入项目名称，初始化一个explo项目模版')
   // 为该命令指定一些参数
   .option('-f, --force', '忽略文件夹检查，如果已存在则直接覆盖')
   /**
