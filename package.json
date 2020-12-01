@@ -1,6 +1,6 @@
 {
   "name": "explo-cli",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "preferGlobal": true,
   "description": "A simple CLI tool for front-end engineering automation construction.",
   "repository": {
@@ -13,9 +13,7 @@
   "homepage": "https://github.com/Explorer-Wu/explo-cli#readme",
   "main": "./bin/explore.js",
   "bin": {
-    "explo": "./bin/explore.js",
-    "explo-check": "./bin/check-fetch.js",
-    "explo-init": "./bin/init-commands.js"
+    "explo": "./bin/explore"
   },
   "dependencies": {
     "async": "^3.2.0",
