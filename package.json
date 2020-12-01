@@ -11,8 +11,9 @@
     "url": "https://github.com/Explorer-Wu/explo-cli/issues"
   },
   "homepage": "https://github.com/Explorer-Wu/explo-cli#readme",
+  "main": "./bin/explore.js",
   "bin": {
-    "explo": "bin/explore",
+    "explo": "./bin/explore.js",
     "explo-check": "bin/check-fetch",
     "explo-init": "bin/init-commands"
   },
