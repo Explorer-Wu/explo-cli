@@ -28,8 +28,8 @@
     "request": "^2.88.2"
   },
   "files": [
-    "./bin",
-    "./lib",
+    "./bin/*",
+    "./lib/*",
     "README.md"
   ],
   "keywords": [
