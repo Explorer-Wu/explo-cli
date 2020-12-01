@@ -5,7 +5,7 @@
 
 * 安装 
 ```
-    npm install explo-cli -g
+    npm install explo-cli -g /  yarn global add explo-cli
 ```    
 
 * 用法
@@ -22,6 +22,11 @@
 ```
     explo -v
 ```    
+
+* 本地当前目录测试全局安装
+```
+    yarn link
+``` 
 
 ## 前端自动化构建目标期望
 快速生成新项目的目录模板，目录结构是每个项目统一个模版规范（目录规范），设定通用的配置如下：  
